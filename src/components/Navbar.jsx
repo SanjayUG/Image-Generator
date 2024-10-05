@@ -17,7 +17,7 @@ const Navbar = ({ setSearch }) => {
           Nature
         </div>
         <div
-          className="button btn btn-outline-primary mx-3"
+          className="button btn btn-outline-warning mx-3"
           onClick={() => {
             setSearch("travel");
             navigate("/");
@@ -26,25 +26,25 @@ const Navbar = ({ setSearch }) => {
           Travel
         </div>
         <div
-          className="button btn btn-outline-info mx-3"
+          className="button btn btn-outline-light mx-3"
           onClick={() => {
-            setSearch("city");
+            setSearch("investment");
             navigate("/");
           }}
         >
-          City
+          Investment
         </div>
         <div
-          className="button btn btn-outline-secondary mx-3"
+          className="button btn btn-outline-light mx-3"
           onClick={() => {
-            setSearch("car");
+            setSearch("culture");
             navigate("/");
           }}
         >
-          Car
+          Culture
         </div>
         <div
-          className="button btn btn-outline-warning mx-3"
+          className="button btn btn-outline-light mx-3"
           onClick={() => {
             setSearch("fashion");
             navigate("/");
@@ -55,14 +55,14 @@ const Navbar = ({ setSearch }) => {
         <div
           className="button btn btn-outline-light mx-3"
           onClick={() => {
-            setSearch("animals");
+            setSearch("computer");
             navigate("/");
           }}
         >
-          Animals
+          Computer
         </div>
         <div
-          className="button btn btn-outline-dark text-light mx-3"
+          className="button btn btn-outline-light mx-3"
           onClick={() => {
             setSearch("technology");
             navigate("/");
@@ -73,14 +73,14 @@ const Navbar = ({ setSearch }) => {
         <div
           className="button btn btn-outline-warning mx-3"
           onClick={() => {
-            setSearch("finance");
+            setSearch("microsoft");
             navigate("/");
           }}
         >
-          Business & Finance
+          Microsoft
         </div>
         <div
-          className="button btn btn-outline-primary mx-3"
+          className="button btn btn-outline-danger mx-3"
           onClick={() => {
             setSearch("tokyo");
             navigate("/");
@@ -88,15 +88,7 @@ const Navbar = ({ setSearch }) => {
         >
           Tokyo
         </div>
-        <div
-          className="button btn btn-outline-info mx-3"
-          onClick={() => {
-            setSearch("dubai");
-            navigate("/");
-          }}
-        >
-          Dubai
-        </div>
+        
 
         {location.pathname == "/saved" ? (
           <div
@@ -110,7 +102,7 @@ const Navbar = ({ setSearch }) => {
             className="button btn btn-warning my-3"
             onClick={() => navigate("/saved")}
           >
-            Saved
+            Go to Saved pic
           </div>
         )}
       </div>
@@ -123,6 +115,7 @@ const Navbar = ({ setSearch }) => {
       >
         {location.pathname === "/" && (
           <div className="mb-3">
+            Search below:
             <input
               type="email"
               className="form-control bg-dark text-light"

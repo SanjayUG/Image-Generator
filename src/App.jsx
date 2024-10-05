@@ -16,7 +16,7 @@ const App = () => {
   useEffect(() => {
     const fetchImage = async () => {
       const res = await axios.get(
-        `https://api.pexels.com/v1/search?query=${search}&per_page=108`,
+        `https://api.pexels.com/v1/search?query=${search}&per_page=64`,
         {
           headers: {
             Authorization: API_KEY,
